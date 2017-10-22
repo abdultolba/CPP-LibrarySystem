@@ -12,9 +12,7 @@
 
 using namespace std;
 
-Magazine::Magazine() : Item(){
-    Issue_Number = 0;
-}
+Magazine::Magazine() : Item(), Issue_Number{0}{}
 
 Magazine::Magazine(string a, string b, bool c, int d) : Item(a, b, c), Issue_Number(d){ }
 
