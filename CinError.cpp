@@ -16,7 +16,7 @@ CinError::CinError(){
     message = "Error: Invalid input. Input must be a number.";
 }
 
-CinError::CinError(string m) : message(m){ }
+CinError::CinError(string m) : message{m}{ }
 
 string CinError::what(){
     return message;
