@@ -12,9 +12,7 @@
 
 using namespace std;
 
-Journal::Journal() : Item(){
-    Volume = 0;
-}
+Journal::Journal() : Item(), Volume{0}{}
 
 Journal::Journal(string a, string b, bool c, int d) : Item(a, b, c), Volume(d){ }
 
