@@ -12,13 +12,9 @@
 
 using namespace std;
 
-Item::Item(){
-    ID = "";
-    name = " ";
-    status = false;
-}
+Item::Item() : ID{""), name{""}, status{false}{ }
 
-Item::Item(string a, string b, bool c) : ID(a), name(b), status(c){ }
+Item::Item(string a, string b, bool c) : ID{a}, name{b}, status{c}{ }
 
 string Item::getID(){
     return ID;
