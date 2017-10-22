@@ -12,9 +12,7 @@
 
 using namespace std;
 
-Book::Book() : Item(){
-    Author_Name = "";
-}
+Book::Book() : Item(), Author_Name{""}{}
 
 Book::Book(string a, string b, bool c, string d) : Item(a, b, c), Author_Name(d){ }
 
